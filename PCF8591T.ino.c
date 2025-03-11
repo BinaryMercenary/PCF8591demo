@@ -23,7 +23,7 @@ void setup(){
 } //end setup
 
 void loop(){
-  ////no delay pls, we luv speeeed
+  ////test with out delay pls, we love speed
   //delay(1000);
 
   //Init. readings from the DAC
@@ -53,8 +53,8 @@ void loop(){
   Wire.endTransmission(); // end tranmission
 
   ////Arduino UNO SCL speeds yield a 2.25ms duty cycle (not very fast), plus
-  ////Enabling serial output comes with a little computer science consequence;
-  ////Every bit of output will result delay, making the duty cycle longer, e.g.:
+  ////Enabling serial output comes with a little computer science consequence:
+  ////Every bit of output will result in delays, making the duty cycle longer, e.g.:
   //Serial.println(); // 36 of these would make your duty cycle 8ms
   //Serial.println( <...96 ascii characters...> ); // would make your duty cycle 8ms
   ////This is a great reason to have multithread/asynch systems, right?!
